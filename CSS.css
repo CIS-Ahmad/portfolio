@@ -586,7 +586,7 @@ footer {
     gap: 20px;
     width: 100vw;
     height: 100px;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: black;
     z-index: 101;
