@@ -286,7 +286,7 @@ section {
 .skillsec {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   width: 100%;
   max-width: 1000px;
   height: 60%;
@@ -301,7 +301,7 @@ article {
   height: 15%;
 }
 
-article > h2 {
+.skillsec > h2 {
   color: aqua;
   text-align: left;
   margin: 0;
@@ -312,24 +312,24 @@ article > h2 {
 
 .SkillsGroup {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 30px;
-  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 90%;
   height: 12%;
   margin: 0%;
-  padding-left: 20px;
 }
 
 .skilliteam {
-  display: flex;
-  flex-direction: row;
+  display: inline;
   background: #1e293b;
   padding: 15px;
   justify-content: center;
+  text-align: center;
   border-radius: 10px;
-  width: 100px;
+  width: 70px;
   transition: 0.3s;
   color: white;
+  margin: 15px auto;
 }
 .skilliteam:hover {
   transform: translateY(-5px);
@@ -419,11 +419,11 @@ h3 {
 }
 
 .conright > h2 {
-  padding-left: 20px;
   font-size: 50px;
   margin: 0%;
+  margin-bottom: 20px;
   color: white;
-  text-align: left;
+  text-align: center;
   padding: 0%;
 }
 
@@ -451,10 +451,9 @@ textarea {
 }
 
 #Conbut {
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin: 20px auto 0 auto;
   color: white;
-  margin-left: 270px; /*هاي مشكلة ثانية مش عارف ليه ما اشتغل */
 }
 #Conbut:hover {
   color: black;
@@ -462,7 +461,7 @@ textarea {
 .icon {
   display: flex;
   height: 20px;
-  width: 100px;
+  width: 100%;
   gap: 5px;
   justify-content: center;
 }
@@ -471,10 +470,12 @@ footer {
   display: flex;
   justify-content: center;
   margin-left: 250px;
-  width: calc(100vw - 250px);
   background-color: rgb(32, 32, 32);
   height: 100px;
   color: aqua;
+}
+footer > p {
+  font-size: 30px;
 }
 .ancher-text {
   color: white;
@@ -483,16 +484,83 @@ footer {
   font-weight: bold;
 }
 
-@media (max-width: 900px) {
-  
+@media (max-width: 1024px) {
+  .ProjectsGroup {
+    grid-template-columns: repeat(2, 225px);
+    width: 550px;
+    gap: 50px;
+    padding: 40px 30px;
+  }
+
+  .Name {
+    font-size: 62px;
+  }
+
+  .conleft > h2 {
+    padding-left: 17px;
+    font-size: 35px;
+  }
+  .conleft > p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .conright > h2 {
+    padding-left: 17px;
+    font-size: 35px;
+    margin-left: 10px;
+  }
+  .Grouptexts .text {
+    width: 145px;
+    font-size: 17px;
+  }
+  textarea {
+    width: 290px;
+    font-size: 18px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 850px) {
+  nav {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 101;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin: auto;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+  }
+  ul li a:hover {
+    color: aqua;
+  }
   aside {
-    width: 200px;
+    width: 150px;
+    display: none;
   }
+
   main {
-    margin-left: 200px;
-    width: calc(100vw - 200px);
+    width: 100vw;
     min-height: 100vh;
+    margin-left: 0;
   }
+
   .Bgtext {
     font-size: 80px;
     font-weight: 900;
@@ -528,7 +596,7 @@ footer {
 
   .SkillsGroup {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .skilliteam {
@@ -563,7 +631,7 @@ footer {
     margin-left: 10px;
   }
   .Grouptexts > .text {
-    width: 175px;
+    width: 25%;
     font-size: 17px;
   }
   textarea {
@@ -577,47 +645,14 @@ footer {
   .ancher-text {
     font-size: 13px;
   }
-  h3 {
-    font-size: 20px;
-  }
 }
-
-@media (max-width: 650px) {
-  nav {
-    display: flex;
-    width: 100vw;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    background-color: black;
-    z-index: 101;
-  }
-
+@media (max-width: 640px) {
   nav ul {
-    display: flex;
     gap: 12px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    margin: auto;
   }
 
   nav ul li a {
-    color: white;
-    text-decoration: none;
     font-size: 18px;
-    transition: 0.3s ease;
-  }
-  aside {
-    width: 150px;
-    display: none;
-  }
-
-  main {
-    width: 100vw;
-    min-height: 100vh;
-    margin-left: 0;
   }
 
   .Bgtext {
@@ -657,13 +692,15 @@ footer {
   }
 
   .SkillsGroup {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-right: 20px;
+    width: auto;
   }
   .skilliteam {
     padding: 10px;
-    width: 50px;
+    width: auto;
+    min-width: 100px;
   }
   .ProjectsGroup {
     width: 300px;
@@ -678,32 +715,36 @@ footer {
   .contact {
     padding: 0px 20px 20px 0px;
     gap: 65px;
+    flex-direction: column;
   }
+
   .conleft > h2 {
     padding-left: 13px;
     font-size: 20px;
   }
   .conleft > p {
-    font-size: 10px;
-    line-height: 15px;
-    color: rgba(184, 184, 184, 0.658);
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .conright {
+    border: none;
   }
 
   .conright > h2 {
     margin: 15px;
     font-size: 20px;
   }
+
   .Grouptexts > .text {
-    width: 105px;
+    width: 155px;
     font-size: 15px;
   }
 
   textarea {
-    width: 210px;
+    width: 310px;
     font-size: 15px;
     padding: 15px;
-   
-
   }
 
   #DOWNLOAD {
@@ -711,35 +752,63 @@ footer {
     font-size: 14px;
     padding: 10px;
   }
-  h3 {
-    font-size: 1px;
-  }
+
   footer > p {
     text-align: center;
-    margin-right: 200px;
-    white-space: nowrap;
   }
   .ancher-text {
-        font-size: 10px;
-
+    font-size: 10px;
   }
   #Conbut {
-  color: white;
-  margin:auto; 
-  margin-top: 15px;
-  width: 150px;
-}
-}
-@media (max-width: 350px) {
+    color: white;
+    margin: auto;
+    margin-top: 15px;
+    width: 150px;
+  }
 
-  .conright{
+  .left {
+    width: 100%;
+  }
+  .right {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "p1 p1"
+      "p2 btn"
+      "p3 p3";
+    gap: 50px;
+  }
+
+  .p1 {
+    grid-area: p1;
+  }
+  .p2 {
+    grid-area: p2;
+  }
+  .p3 {
+    grid-area: p3;
+  }
+  .btn {
+    grid-area: btn;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 450px) {
+  nav ul {
+    gap: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  .conright {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .Grouptexts{
+  .Grouptexts {
     flex-direction: column;
   }
-   .Grouptexts >.text {
+  .Grouptexts > .text {
     width: 145px;
     height: 150px;
     font-size: 15px;
@@ -749,25 +818,75 @@ footer {
     width: 120px;
     font-size: 12px;
     padding: 15px;
-   
-
   }
- footer > p {
+  footer > p {
     justify-content: start;
     margin-left: 10px;
     white-space: nowrap;
     font-size: 13px;
+    width: 100%;
   }
-  .Bgtext{
-      font-size: 60px;
-
+  .Bgtext {
+    font-size: 60px;
   }
-  .front{
+  .front {
     font-size: 16px;
-        border-bottom: aqua solid 1px;
-
+    border-bottom: aqua solid 1px;
   }
-  .SkillsGroup > h2{
-    font-size: 22px;
+
+  .SkillsGroup {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skilliteam {
+    width: 25%;
+    min-width: 75px;
+  }
+  .contact {
+    flex-direction: column;
+  }
+  .conleft {
+    width: 100%;
+  }
+  .conleft > p {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .conleft > h3 {
+    display: none;
+  }
+  .icon {
+    gap: 15px;
+  }
+  .conright {
+    border: none;
+    width: 80%;
+    text-align: left;
+  }
+
+  .conright > h2 {
+    text-align: center;
+
+    font-size: 20px;
+    margin: 0%;
+    color: white;
+    text-align: left;
+    padding: auto;
+    margin: 0px 0px 20px 5px;
+  }
+  .Grouptexts {
+    height: 30px;
+    padding-bottom: 20px;
+  }
+  .Grouptexts > .text {
+    width: 150px;
+    font-size: 15px;
+  }
+  textarea {
+    width: 210px;
+    font-size: 15px;
+    margin: 20px;
+    margin-bottom: 0%;
+    margin-top: 25px;
   }
 }
