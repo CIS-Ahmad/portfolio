@@ -428,7 +428,7 @@ h3 {
 
 .Grouptexts {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   padding-left: 20px;
   height: 60px;
   padding-bottom: 20px;
@@ -693,18 +693,20 @@ footer {
   }
 
   .conright > h2 {
-    padding-left: 15px;
+    margin: 15px;
     font-size: 20px;
   }
   .Grouptexts > .text {
-    width: 135px;
+    width: 110px;
     font-size: 15px;
   }
 
   textarea {
-    width: 250px;
+    width: 220px;
     font-size: 15px;
     padding: 15px;
+   
+
   }
 
   #DOWNLOAD {
@@ -720,4 +722,14 @@ footer {
     margin-right: 200px;
     white-space: nowrap;
   }
+  .ancher-text {
+        font-size: 10px;
+
+  }
+  #Conbut {
+  color: white;
+  margin:auto; 
+  margin-top: 15px;
+  width: 150px;
+}
 }
