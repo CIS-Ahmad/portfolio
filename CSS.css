@@ -483,6 +483,7 @@ footer {
 }
 
 @media (max-width: 900px) {
+  
   aside {
     width: 200px;
   }
@@ -632,7 +633,7 @@ footer {
     padding: 100px 20px;
   }
   .Name {
-    font-size: 40px;
+    font-size: 30px;
   }
   .left h2 {
     font-size: 24px;
@@ -692,12 +693,12 @@ footer {
     font-size: 20px;
   }
   .Grouptexts > .text {
-    width: 110px;
+    width: 105px;
     font-size: 15px;
   }
 
   textarea {
-    width: 220px;
+    width: 210px;
     font-size: 15px;
     padding: 15px;
    
@@ -727,4 +728,45 @@ footer {
   margin-top: 15px;
   width: 150px;
 }
+}
+@media (max-width: 350px) {
+
+  .conright{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Grouptexts{
+    flex-direction: column;
+  }
+   .Grouptexts >.text {
+    width: 145px;
+    height: 150px;
+    font-size: 15px;
+  }
+
+  textarea {
+    width: 120px;
+    font-size: 12px;
+    padding: 15px;
+   
+
+  }
+ footer > p {
+    justify-content: start;
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 13px;
+  }
+  .Bgtext{
+      font-size: 60px;
+
+  }
+  .front{
+    font-size: 16px;
+        border-bottom: aqua solid 1px;
+
+  }
+  .SkillsGroup > h2{
+    font-size: 22px;
+  }
 }
