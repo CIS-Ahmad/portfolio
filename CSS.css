@@ -7,9 +7,8 @@ body {
 
   scroll-behavior: smooth;
 }
-nav
-{
-    display: none;
+nav {
+  display: none;
 }
 .layout {
   display: block;
@@ -277,7 +276,6 @@ section {
 .right .info-item a {
   color: white;
   text-decoration: none;
-  
 }
 
 .right .info-item a:hover {
@@ -352,11 +350,13 @@ article > h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(51, 65, 85, 0.4);
   border-radius: 10px;
   border: 2px solid rgb(1, 22, 54);
   transition: 0.3s;
   height: 150px;
+  background: rgba(51, 65, 85, 0.4)
+    url("https://www.thedigitaltransformationpeople.com/wp-content/uploads/2019/09/data-warehouse.png")
+    no-repeat center / cover scroll;
 }
 
 .ProjectIteam:hover {
@@ -405,8 +405,10 @@ article > h2 {
   color: rgba(184, 184, 184, 0.658);
 }
 
-h3{
-    text-align: center; font-size: 30px;margin-left: 0%;
+h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-left: 0%;
 }
 
 .conright {
@@ -568,20 +570,18 @@ footer {
     padding: 18px;
   }
   #Conbut {
-    margin-left: 130px; 
+    margin-left: 130px;
   }
-  .ancher-text{
+  .ancher-text {
     font-size: 13px;
   }
-  h3{
-     font-size: 20px;
+  h3 {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 650px) {
-  
-  nav
-{
+  nav {
     display: flex;
     gap: 20px;
     width: 100vw;
@@ -590,29 +590,29 @@ footer {
     top: 0;
     background-color: black;
     z-index: 101;
-}
+  }
 
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  margin: auto;
-}
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    margin: auto;
+  }
 
-nav ul li {
-  display: flex;
-}
+  nav ul li {
+    display: flex;
+  }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: 0.3s ease;
-}
-    aside {
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+  }
+  aside {
     width: 150px;
     display: none;
   }
@@ -622,7 +622,7 @@ nav ul li a {
     min-height: 100vh;
     margin-left: 0;
   }
-  
+
   .Bgtext {
     font-size: 53px;
     font-weight: 900;
@@ -650,10 +650,10 @@ nav ul li a {
     width: 15px;
     height: 15px;
   }
-.right .info-item span ,.right .info-item a {
+  .right .info-item span,
+  .right .info-item a {
     font-size: 11px;
-  
-}
+  }
   article > h2 {
     padding-left: 18px;
     border-left: 1px solid white;
@@ -685,12 +685,12 @@ nav ul li a {
     padding-left: 13px;
     font-size: 20px;
   }
-.conleft > p {
-  font-size: 10px;
-  line-height: 15px;
-  color: rgba(184, 184, 184, 0.658);
-}
-  
+  .conleft > p {
+    font-size: 10px;
+    line-height: 15px;
+    color: rgba(184, 184, 184, 0.658);
+  }
+
   .conright > h2 {
     padding-left: 15px;
     font-size: 20px;
@@ -706,18 +706,17 @@ nav ul li a {
     padding: 15px;
   }
 
-  #DOWNLOAD{
-     width: 140px;
+  #DOWNLOAD {
+    width: 140px;
     font-size: 14px;
     padding: 10px;
   }
-    h3{
-         font-size: 1px;
-    }
-    footer >h2{
-        font-size: 15px;
-        text-align: center;
-        margin-right: 200px;
-    }
-
+  h3 {
+    font-size: 1px;
+  }
+  footer > h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-right: 200px;
+  }
 }
