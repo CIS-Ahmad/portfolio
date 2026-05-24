@@ -624,7 +624,7 @@ footer {
   }
 
   .Bgtext {
-    font-size: 53px;
+    font-size: 75px;
     font-weight: 900;
     letter-spacing: 2px;
   }
@@ -662,6 +662,7 @@ footer {
   .SkillsGroup {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 20px;
   }
   .skilliteam {
     padding: 10px;
