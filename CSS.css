@@ -715,9 +715,9 @@ footer {
   h3 {
     font-size: 1px;
   }
-  footer > h2 {
-    font-size: 15px;
+  footer > p {
     text-align: center;
     margin-right: 200px;
+    white-space: nowrap;
   }
 }
