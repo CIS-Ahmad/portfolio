@@ -469,13 +469,17 @@ textarea {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-left: 250px;
+  width: calc(100vw - 250px);
   background-color: rgb(32, 32, 32);
   height: 100px;
   color: aqua;
 }
 footer > p {
   font-size: 30px;
+  margin: 0;
+  text-align: center;
 }
 .ancher-text {
   color: white;
@@ -559,6 +563,11 @@ footer > p {
     width: 100vw;
     min-height: 100vh;
     margin-left: 0;
+  }
+
+  footer {
+    margin-left: 0;
+    width: 100vw;
   }
 
   .Bgtext {
@@ -820,9 +829,9 @@ footer > p {
     padding: 15px;
   }
   footer > p {
-    justify-content: start;
-    margin-left: 10px;
-    white-space: nowrap;
+    margin: 0;
+    text-align: center;
+    white-space: normal;
     font-size: 13px;
     width: 100%;
   }
